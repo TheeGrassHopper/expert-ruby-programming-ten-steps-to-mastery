@@ -1,0 +1,30 @@
+# The Book of Ruby - http://www.sapphiresteel.com
+
+puts( "--- 10 ---" )
+puts( 10.object_id )
+x = 10
+puts( x.object_id )
+x = 10
+puts( x.object_id )
+
+puts( "--- 100 ---" )
+puts( 100.object_id )
+x = 100
+puts( x.object_id )
+x = 100
+puts( x.object_id )
+
+puts( "--- 10.5 ---" )
+puts( 10.5.object_id )
+x = 10.5
+puts( x.object_id )
+x = 10.5
+puts( x.object_id )
+
+def change_num(x)
+  x += 1
+  x
+end
+
+puts(change_num(x).object_id)
+puts( x.object_id )
